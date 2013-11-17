@@ -1,0 +1,137 @@
+Thinkscroller Changelog
+
+******** VERSION 1.5.1 *******
+Thinkscroller:
+* Added Flash support! Thinkscroller can now export to the Flash Player in Unity 3.5+.
+* Removed extra debug code
+* Added script compatibility down to Unity 3.3 (Asset Store download and example scenes still require Unity 3.5)
+
+******** VERSION 1.5.0 ********
+
+Thinkscroller:
+* Added in-editor documentation! Browse the Thinkscroller docs directly in Unity.
+* Updated reference manual to be much more robust, with a detailed component reference
+* Removed ScrollLayerAlignment.cs
+
+Example Project:
+* Added a planet example scene
+
+******** VERSION 1.4.1 ********
+
+Thinkscroller:
+* Animation curve support! Added a new ScrollLayerAnimation component - add this to a scroll layer to control it via animation curves
+* Fixed an issue in the editor with texture names
+
+******** VERSION 1.4.0 ********
+
+Thinkscroller:
+* Added manual viewport sizing to the Parallax Manager
+* Billboards can now automatically refresh on LateUpdate (off by default; configured in the parallax manager)
+* Object layers now move in pixel space by default (this can be changed in the scroll layer editor)
+* Added more menu commands to create different types of layers
+* Added current mode label to scroll layer editor
+
+******** VERSION 1.3.3 ********
+
+Thinkscroller:
+* The offset property now always uses pixel values.
+* Added alignment property for scroll layers
+* Added Thinksquirrel > Thinkscroller menu for easy setup (huge timesaver!)
+
+Example Project:
+* Adjusted example project to work with the new alignment properties.
+* Fixed various bugs in the example scenes
+
+******** VERSION 1.3.2 ********
+
+Thinkscroller:
+* Fixed the double parallax manager issue (finally!)
+* Added a bool to the Parallax class (wrapUVs - true by default). This wraps texture coordinates to the 0..1 space (prevents texture artifacts when scrolling for a long time).
+
+******** VERSION 1.3.1 ********
+
+Hotfix for a critical bug introduced in 1.3.
+
+******** VERSION 1.3 ********
+IMPORTANT NOTE: This will upgrade the current version of the common libraries, move some folders around, 
+and will change the Thinkscroller namespace to ThinksquirrelSoftware.Thinkscroller to match Thinksquirrel 
+coding standards, and keep compatibility with other Thinksquirrel Software products.
+
+To upgrade:
+1) Back up your project. Open the project and close all open scenes.
+2) Completely remove the Plugins/Thinkscroller, Plugins/Thinksquirrel Common, and Editor/Thinksquirrel Software folders.
+3) Install the new version from the Asset Store.
+4) Change the Thinkscroller namespace in your scripts to ThinksquirrelSoftware.Thinkscroller
+
+Other than the namespace change, the API won't change at all. Sorry for the inconvenience!
+
+Thinkscroller:
+* Changed namespaces/folders for various files
+* Added offline documentation
+* Removed LINQ dependency (No references to System.Core.dll or System.Xml.dll)
+* ScrollLayers now implement IComparable
+* Added stripped down version of the common libraries as a .NET extension (gets rid of redundant code)
+* The common libraries are open source and can be found at https://github.com/Thinksquirrel-Software/Thinksquirrel-Common
+
+Example Project:
+* Added Component Menu options for example scripts
+* Changed camera sizes to typical pixel-perfect sizes (half the screen height as orthographic size)
+
+******** VERSION 1.2 ********
+Thinkscroller:
+* Got rid of Thinksquirrel Common Libraries dependency. You can safely delete the Thinksquirrel Common folder and TSInspectorBase class.
+* Fixed an issue with the Parallax Manager being created more than once.
+	- If you are creating a parallax manager from a script, make sure to call Parallax.CreateManager() before accessing any static functions!
+* Fixed an issue with non-pixel perfect textures not working
+* Added UV padding
+
+Example project:
+* Textures are compressed by default
+	
+******** VERSION 1.1 ********
+Thinkscroller:
+* Separated the default shader from the ScrollLayer script
+* Added Object Layers! Disable Auto Billboards and enable "Object Layer"
+	- Object layers scroll the transform and ignore any textures on the object
+	- They can also scroll groups of objects, and work with physics
+	- Fully compatible with most sprite/2D game management systems
+	- Object Layers scroll in world space (relative to the parallax camera), as opposed to UV space
+	- Object Layers can also be enabled and disabled through the API using the isObjectLayer property
+
+******** VERSION 1.0.5 ********
+Note: All negative scales need to be flipped, or textures may appear backwards.
+
+Thinkscroller:
+* Added advanced pixel perfect features (cropping, tiling)
+* Added pixel fix for floating-point error compensation
+* Fixed scale bug (scales were negative)
+* Added API calls for all of the above
+
+Example project:
+* Added cropped textures and cropped example scene
+* Bug fixes
+
+******** VERSION 1.0.3 ********
+
+Thinkscroller:
+* Added SetMaterial() method
+* Added tangent calculation
+* Added advanced options
+* Renamed common libraries
+* Added extension methods
+
+******** VERSION 1.0.2 ********
+
+Thinkscroller:
+* Fixed an issue with parallax cameras not located at the origin
+* Fixed an issue with upside down UVs
+* Fixed an issue with weights not updating
+* Fixed an issue with the default shader
+
+Example project:
+* Added second example scene
+* Bug fixes
+
+******** VERSION 1.0 ********
+
+Initial release.

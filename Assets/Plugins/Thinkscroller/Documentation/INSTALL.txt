@@ -1,0 +1,1 @@
+Unpack the archive and you're ready to go! Thinkscroller requires no further project setup.

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Surface
+  m_Shader: {fileID: 4800000, guid: f65f68d6715ee4dc898ca4137a761a16, type: 1}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: b17e9a9d2c4884b6cb6c7d160f9a0314, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 4626ffa9b66a2421199bdfaffe6d30e0, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 1
+      data:
+        first:
+          name: _Size
+        second: .100000001
+      data:
+        first:
+          name: _Falloff
+        second: 5.25
+      data:
+        first:
+          name: _FalloffPlanet
+        second: 5
+      data:
+        first:
+          name: _Transparency
+        second: 15
+      data:
+        first:
+          name: _TransparencyPlanet
+        second: 1
+      data:
+        first:
+          name: _RimPower
+        second: 4.92307663
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .999574006, g: 1, b: .999684095, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .404326111, g: .348736793, b: .575343549, a: 1}
+      data:
+        first:
+          name: _AtmoColor
+        second: {r: .676774621, g: 1, b: .967182279, a: 1}
+      data:
+        first:
+          name: _RimColor
+        second: {r: .317685902, g: .471774757, b: .652582288, a: .75}
